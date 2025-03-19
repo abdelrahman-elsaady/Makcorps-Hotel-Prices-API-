@@ -1,6 +1,6 @@
 /* src/components/SearchForm.module.css */
 .formContainer {
-    margin: 20px auto;
+    margin: 10px auto;
     max-width: 800px;
     padding: 30px;
     border: 1px solid #ddd;
@@ -10,11 +10,11 @@
 }
 
 .inputField {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .label {
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     font-weight: bold;
     color: #333;
 }
@@ -22,7 +22,7 @@
 input[type="text"],
 input[type="date"],
 input[type="number"] {
-    padding: 10px;
+    padding: 5px;
     border: 1px solid #ced4da;
     border-radius: 5px;
     width: 100%;
@@ -39,7 +39,7 @@ input[type="number"]:focus {
 
 .button {
     width: 100%;
-    padding: 12px;
+    padding: 7px;
     background-color: #007bff;
     color: white;
     border: none;
