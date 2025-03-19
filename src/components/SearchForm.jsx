@@ -34,36 +34,36 @@ const SearchForm = ({ onSearch }) => {
   return (
     <form onSubmit={handleSearch} className={styles.formContainer}>
       <div className="row">
-        <div className="col-lg-4 col-md-6 col-sm-12 mb-3">
+        <div className="col-lg-4 col-md-6 col-sm-6 mb-3">
           <label className={styles.label}>Destination <small>
           (cairo for examble)</small></label>
           <input type="text" className={styles.inputField} value={destination} onChange={(e) => setDestination(e.target.value.toUpperCase())} placeholder="Destination" required />
         </div>
-        <div className="col-lg-4 col-md-6 col-sm-12 mb-3">
+        <div className="col-lg-4 col-md-6 col-sm-6 mb-3">
           <label className={styles.label}>Check-In</label>
           <input type="date" className={styles.inputField} value={checkIn} onChange={(e) => setCheckIn(e.target.value)} required />
         </div>
-        <div className="col-lg-4 col-md-6 col-sm-12 mb-3">
+        <div className="col-lg-4 col-md-6 col-sm-6 mb-3">
           <label className={styles.label}>Check-Out</label>
           <input type="date" className={styles.inputField} value={checkOut} onChange={(e) => setCheckOut(e.target.value)} required />
         </div>
-      </div>
-      <div className="row">
-        <div className="col-lg-4 col-md-6 col-sm-12 mb-3">
+      {/* </div> */}
+      {/* <div className="row"> */}
+        <div className="col-lg-4 col-md-6 col-sm-6 mb-3">
           <label className={styles.label}>Adults</label>
           <input type="number" className={styles.inputField} value={adults} onChange={(e) => setAdults(e.target.value)} min="1" />
         </div>
-        <div className="col-lg-4 col-md-6 col-sm-12 mb-3">
+        <div className="col-lg-4 col-md-6 col-sm-6 mb-3">
           <label className={styles.label}>Children</label>
           <input type="number" className={styles.inputField} value={children} onChange={(e) => setChildren(e.target.value)} min="0" max="10" />
         </div>
-        <div className="col-lg-4 col-md-6 col-sm-12 mb-3">
+        <div className="col-lg-4 col-md-6 col-sm-6 mb-3">
           <label className={styles.label}>Pagination</label>
           <input type="number" className={styles.inputField} value={pagination} onChange={(e) => setPagination(e.target.value)} min="0" placeholder="Pagination (0 for first page)" required />
         </div>
-      </div>
-      <div className="row">
-        <div className="col-lg-4 col-md-6 col-sm-12 mb-3">
+      {/* </div> */}
+      {/* <div className="row"> */}
+        <div className="col-lg-4 col-md-6 col-sm-6 mb-3">
           <label className={styles.label}>Currency</label>
           <select className={styles.inputField} value={currency} onChange={(e) => setCurrency(e.target.value)} required>
             <option value="USD">USD - US Dollar</option>
@@ -78,7 +78,7 @@ const SearchForm = ({ onSearch }) => {
             <option value="SGD">SGD - Singapore Dollar</option>
             <option value="EGP">EGP - Egyptian Pound</option>
           </select>
-        </div>
+        {/* </div> */}
         <div className="col-lg-4 col-md-6 col-sm-12 mb-3">
           <label className={styles.label}>Include Tax</label>
           <div>
@@ -88,6 +88,7 @@ const SearchForm = ({ onSearch }) => {
         <div className=" mb-3">
           <button type="submit" className={styles.button}>Search</button>
         </div>
+      </div>
       </div>
     </form>
   );
