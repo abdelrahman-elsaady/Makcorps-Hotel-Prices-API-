@@ -1,0 +1,26 @@
+/* src/components/HotelResults.module.css */
+.hotelCard {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s;
+  }
+  
+  .hotelCard:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hotelName {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .hotelPrice {
+    font-weight: bold;
+    color: #28a745; /* Bootstrap success color */
+  }
+  
+  .hotelRating {
+    color: #ffc107; /* Bootstrap warning color */
+  }
