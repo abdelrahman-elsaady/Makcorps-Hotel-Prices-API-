@@ -16,9 +16,9 @@ const App = () => {
   };
 
   return (
-    <div  className="mt-5 d-flex justify-content-center align-items-center">
+    <div  className="mt-2 d-flex justify-content-center">
       <div className="container">
-        <h1 className="text-center mb-4">Hotel Reservation System</h1>
+        <h1 className="text-center mb-2">Hotel Reservation System</h1>
         <SearchForm onSearch={handleSearch} />
         
         {loading ? (
